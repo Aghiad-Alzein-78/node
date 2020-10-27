@@ -1,6 +1,6 @@
 
 const os=require('os')
-
+const print=require('../utility.js')
 //get the operating system name
 console.log(os.platform())
 
@@ -13,4 +13,15 @@ console.log(os.cpus())
 //Free memory
 console.log(os.freemem())
 //Total memory
-console.log()
+console.log(os.totalmem())
+
+//Home Directory
+print(os.homedir())
+//uptime
+print(os.uptime()/(60*60*24*30))
+
+//user info
+print(os.userInfo())
+
+//os version
+print(os.version())
