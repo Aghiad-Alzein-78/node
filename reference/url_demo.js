@@ -15,10 +15,18 @@ print(myURl.hostname)
 print(myURl.host)
 
 //to get the pathname 
-print(myURl.pathname)
+print("Path:",myURl.pathname)
 
 //serialize the query return string like '?id=100&&status=active'
 print(myURl.search)
 
 //get object of  type URLSearchParams
 print(myURl.searchParams)
+
+myURl.searchParams.append("Name","Aghiad")
+
+print(myURl.searchParams)
+
+myURl.searchParams.forEach((key,value)=>{
+    print(key,':',value)
+})
